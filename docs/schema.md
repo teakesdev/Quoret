@@ -3,7 +3,6 @@
 | name | data | validate
 |  id  |  t.integer | notNull unique
 | username| t.string | notNull unique
-| email | t.string | notNull unique
 | password_digest | t.string | notNull
 | session_token | t.string |notNull
 

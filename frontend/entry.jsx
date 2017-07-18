@@ -4,5 +4,5 @@ import ReactDOM from 'react-dom';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
-  ReactDOM.render(<Root store="fill in after configure store" />, root);
+  ReactDOM.render(<h1>React is Working</h1>, root);
 });

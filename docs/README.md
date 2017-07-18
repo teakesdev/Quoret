@@ -7,7 +7,7 @@
 # H2 Minimum Viable Product
 
 Quoret is React/Redux and Ruby on Rails-based web application inspired
-by Quora with a twist such that it only caters to one type of question,
+by Quoret with a twist such that it only caters to one type of question,
 the rhetorical question. This application should, in a smooth and bug-free
 manner, satisfy the following criteria:
 
