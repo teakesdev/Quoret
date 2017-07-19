@@ -1,10 +1,10 @@
-# H1 Quoret
+## Quoret
 
 [Link to heroku](https://www.heroku.com/)
 
 [Link to trello](https://trello.com/b/q4SCR3a7/quoret)
 
-# H2 Minimum Viable Product
+## Minimum Viable Product
 
 Quoret is React/Redux and Ruby on Rails-based web application inspired
 by Quoret with a twist such that it only caters to one type of question,
@@ -21,7 +21,7 @@ manner, satisfy the following criteria:
  from the criteria that a user is subscribed to
 
 
-# H2 Design Docs
+## Design Docs
 
 [View Wireframes](./wireframes)
 [React Components](./component-hierarchy)
@@ -29,7 +29,7 @@ manner, satisfy the following criteria:
 [Database Scheme](./schema)
 [Sample State](./sample-state)
 
-# H2 Implementation Timeline
+## Implementation Timeline
 
 1. Front and Backend User Authentication (2 days)
   Objective: Functioning app with User Authentication and Sign Up

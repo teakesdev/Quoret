@@ -14,7 +14,6 @@
 
 #H3 Session
 
-- 'GET' /sessions/new
 - 'POST' /sessions
 - 'DELETE' /sessions
 
