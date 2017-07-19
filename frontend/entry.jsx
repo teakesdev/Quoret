@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
+import { Root } from './components/root';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,5 +9,5 @@ document.addEventListener('DOMContentLoaded', () => {
   const store = configureStore();
   window.getState = store.getState;
   window.dispatch = store.dispatch; // just for testing!
-  ReactDOM.render(<h1>React is Working</h1>, root);
+  ReactDOM.render(<Root store={ store }/>, root);
 });
