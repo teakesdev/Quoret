@@ -54,10 +54,9 @@
     justify-content: center;
     text-align: center;
     flex
-    /*box-sizing: padding-box;*/
+    box-sizing: padding-box;
     font-size: 150px;
     color: brown;
-
   }
 
   body {
