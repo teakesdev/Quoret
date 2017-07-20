@@ -16,19 +16,20 @@
 
 
 
+
  .login-input {
     height:20px;
     font-size:14pt;
+    padding: 4px;
 }
 
  .login-form-container {
-
+    width: 500px;
     display: inline-block;
     justify-content: center;
     /*align-items: center;*/
     text-align: center;
-    margin-left: 450px;
-    opacity: 0.8;
+    /*margin-left: 450px;*/
     vertical-align: middle;
     /*align-self: right;*/
     color: #53B245;
@@ -41,7 +42,8 @@
     /*float: middle;*/
     font-family: 'Artifika', serif;
     /*text-align: center;*/
-
+    border-radius: 25px;
+    padding: 10px;
 
  }
 
@@ -58,25 +60,28 @@
     color: brown;
   }
 
-  body {
-    background-image: url('https://static.vecteezy.com/system/resources/previews/000/094/668/non_2x/free-3d-question-marks-background-vector.jpg');
+  .background {
+    background-image: url('http://i.imgur.com/FazR5LO.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    background-position: 0px -300px;
+    /*background-position: 0px -300px;*/
+    height: 100vh;
+    object-fit: cover;
+    text-align: center;
   }
 
   .btn {
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  background: #53B245;
+  background-image: -webkit-linear-gradient(top, #53B245, ##53B245);
+  background-image: -moz-linear-gradient(top, #53B245, ##53B245);
+  background-image: -ms-linear-gradient(top, #53B245, ##53B245);
+  background-image: -o-linear-gradient(top, #53B245, ##53B245);
+  background-image: linear-gradient(to bottom, #53B245, ##53B245);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
-  font-family: Georgia;
+  font-family: Arial;
   color: #ffffff;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
@@ -84,12 +89,11 @@
 }
 
 .btn:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  background: #47db30;
+  background-image: -webkit-linear-gradient(top, #47db30, #47db30);
+  background-image: -moz-linear-gradient(top, #47db30, #47db30);
+  background-image: -ms-linear-gradient(top, #47db30, #47db30);
+  background-image: -o-linear-gradient(top, #47db30, #47db30);
+  background-image: linear-gradient(to bottom, #47db30, #47db30);
   text-decoration: none;
-  opacity: 1.0;
 }

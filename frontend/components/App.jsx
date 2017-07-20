@@ -8,8 +8,8 @@ import { AuthRoute, ProtectedRoute } from '../actions/route_actions';
 const App = () => (
   <div>
 
-      <h1 className="header1">¿Quoret?</h1>
-      <h2 className="logo"></h2>
+
+
 
       <Switch>
         <ProtectedRoute exact path="/" component={QuestionIndexContainer} />
