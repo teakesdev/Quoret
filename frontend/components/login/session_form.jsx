@@ -29,6 +29,12 @@ class SessionForm extends React.Component {
     this.props.processForm(user);
   }
 
+  handleGuestSubmit(e) {
+    e.preventDefault();
+    const user = this.state;
+    this.props.processGuest(user);
+  }
+
   navLink() {
     if (this.props.formType === 'login') {
       return <Link to="/signup">sign up instead</Link>;
@@ -51,11 +57,14 @@ class SessionForm extends React.Component {
 
   render() {
     return (
+
       <div className="login-form-container">
+
         <form onSubmit={this.handleSubmit} className="login-form-box">
           Welcome to Quoret!
           <br/>
           Please {this.props.formType} or {this.navLink()}
+          {this.renderErrors()}
           <div className="login-form">
             <br/>
             <label>Username:
@@ -74,9 +83,23 @@ class SessionForm extends React.Component {
               />
             </label>
             <br/>
-            <input type="submit" value="Submit"  />
+            <input className="btn" type="submit" value="Submit"  />
           </div>
+          <form type="hidden" onSubmit={this.handleGuestSubmit}>
+            <input type="hidden"
+              value="Guest"
+              onSubmit={this.update('username')}
+              className="login-input"
+            />
+          <input type="hidden"
+              value="password"
+              onSubmit={this.update('password')}
+              className="login-input"
+            />
+          <input className="btn" type="submit" value="Login As Guest" />
+          </form>
         </form>
+
       </div>
     );
   }
