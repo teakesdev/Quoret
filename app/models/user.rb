@@ -17,7 +17,7 @@ class User < ApplicationRecord
   def self.find_by_credentials(username, password)
     @user = User.find_by(username: username)
     return nil unless @user
-    user.password_is?(password) ? user : nil
+    @user.password_is?(password) ? @user : nil
   end
 
   def password_is?(password)
@@ -29,6 +29,10 @@ class User < ApplicationRecord
     ensure_session_token_uniqueness
     self.save
     self.session_token
+  end
+
+  def new_session_token
+    SecureRandom.base64
   end
 
   private
