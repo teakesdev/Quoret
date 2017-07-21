@@ -21,6 +21,7 @@
     height:20px;
     font-size:14pt;
     padding: 4px;
+    border: 10px;
 }
 
  .login-form-container {
@@ -44,7 +45,7 @@
     /*text-align: center;*/
     border-radius: 25px;
     padding: 10px;
-
+    border: 25px;
  }
 
 
@@ -59,7 +60,7 @@
     font-size: 150px;
     color: brown;
   }
-
+/*http://i.imgur.com/kyB4ZoR.png*/
   .background {
     background-image: url('http://i.imgur.com/FazR5LO.png');
     background-repeat: no-repeat;
@@ -70,7 +71,7 @@
     object-fit: cover;
     text-align: center;
   }
-
+/*http://i.imgur.com/FazR5LO.png*/
   .btn {
   background: #53B245;
   background-image: -webkit-linear-gradient(top, #53B245, #53B245);
@@ -86,6 +87,7 @@
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  border: 100px;
 }
 
 .btn:hover {
