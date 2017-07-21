@@ -14,7 +14,9 @@
  *= require_self
  */
 
-
+ .header-group {
+  background-color: brown;
+ }
 
 
  .login-input {
@@ -48,7 +50,9 @@
     border: 25px;
  }
 
-
+ /*.login-signup {
+   background-color: brown;
+ }*/
 
   h1.header1 {
     font-family: 'Artifika', serif;

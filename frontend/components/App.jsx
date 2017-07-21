@@ -5,10 +5,13 @@ import SessionFormContainer from './login/session_form_container';
 import QuestionIndexContainer from './question/question_index_container';
 import { AuthRoute, ProtectedRoute } from '../actions/route_actions';
 
+
+
 const App = () => (
   <div>
 
     <header>
+
       <GreetingContainer />
     </header>
 
