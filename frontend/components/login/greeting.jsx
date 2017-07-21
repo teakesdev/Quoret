@@ -1,13 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const sessionLinks = () => (
-  <nav className="login-signup">
-    <Link to="/login">Login</Link>
-    &nbsp;or&nbsp;
-    <Link to="/signup">Sign up!</Link>
-  </nav>
-);
+// const sessionLink = (action, route) => {
+//
+// };
+//
+// const sessionLinks = (action) => (
+//   <nav className="login-signup">
+//     <div onClick={sessionLink(action,'/login')}>Login</div>
+//     &nbsp;or&nbsp;
+//     <div onClick={sessionLink(action, '/signup')}>Sign up!</div>
+//   </nav>
+// );
 
 const personalGreeting = (currentUser, logout) => (
   <form>

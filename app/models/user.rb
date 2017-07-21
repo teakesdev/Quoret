@@ -1,5 +1,7 @@
 class User < ApplicationRecord
 
+  has_many :questions
+
   attr_reader :password
 
   validates :username, :password_digest, :session_token, presence: true

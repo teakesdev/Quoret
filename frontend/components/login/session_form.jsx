@@ -10,6 +10,7 @@ class SessionForm extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleGuestSubmit = this.handleGuestSubmit.bind(this);
+    this.sessionLink = this.sessionLink.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -36,11 +37,21 @@ class SessionForm extends React.Component {
     this.props.processGuest(user);
   }
 
+  sessionLink(route) {
+    return () => {
+      this.props.receiveErrors([]);
+      this.props.history.push(route);
+    };
+  }
+
+
   navLink() {
     if (this.props.formType === 'login') {
-      return <Link to="/signup">sign up instead</Link>;
+      return <div className="link-switch"
+        onClick={this.sessionLink("/signup")}>sign up instead</div>;
     } else {
-      return <Link to="/login">log in instead</Link>;
+      return <div className="link-switch"
+        onClick={this.sessionLink("/login")}>log in instead</div>;
     }
   }
 
@@ -85,9 +96,11 @@ class SessionForm extends React.Component {
               />
             </label>
             <br/>
+            <div className="login-buttons">
             <input className="btn" type="submit" value="Submit"  />
+            <button className="btn" onClick={this.handleGuestSubmit}>Login As Guest</button>
+            </div>
           </div>
-          <button className="btn" onClick={this.handleGuestSubmit}>Login As Guest</button>
         </form>
         </div>
       </div>

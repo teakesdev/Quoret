@@ -18,12 +18,23 @@
   background-color: brown;
  }
 
+ .link-switch {
+   color: blue;
+   cursor: pointer;
+ }
+
+ .link-switch:hover {
+   color: #67CAFE;
+   cursor: pointer;
+ }
 
  .login-input {
     height:20px;
     font-size:14pt;
     padding: 4px;
     border: 10px;
+    margin: 5px;
+    outline-width: 0;
 }
 
  .login-form-container {
@@ -69,7 +80,7 @@
     background-image: url('http://i.imgur.com/FazR5LO.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     /*background-position: 0px -300px;*/
     height: 100vh;
     object-fit: cover;
@@ -92,6 +103,11 @@
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .btn:hover {

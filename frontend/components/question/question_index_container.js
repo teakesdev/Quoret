@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 // import { selectAllPosts } from '../reducers/selectors';
-// import { requestAllPosts, requestAPost, destroyPost, newPost } from '../actions/post_actions';
+// import { requestAllQuestions, requestAQuestion, destroyQuestion, newQuestion } from '../actions/question_actions';
 import QuestionIndex from './question_index';
 
 const mapStateToProps = state => ({
