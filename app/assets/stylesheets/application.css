@@ -33,7 +33,7 @@
    cursor: pointer;
  }
 
- .login-input {
+ .login-input1 {
     height:20px;
     font-size:14pt;
     padding: 4px;
@@ -41,6 +41,18 @@
     margin: 5px;
     outline-width: 0;
 }
+
+  .login-input2 {
+     height:20px;
+     font-size:14pt;
+     padding: 4px;
+     border: 10px;
+     margin: 5px;
+     outline-width: 0;
+
+  }
+
+
 
  .login-form-container {
     width: 500px;
@@ -64,6 +76,8 @@
     border-radius: 25px;
     padding: 10px;
     border: 25px;
+    text-align: center;
+
  }
 
  /*.login-signup {
@@ -123,4 +137,8 @@
   background-image: -o-linear-gradient(top, #47db30, #47db30);
   background-image: linear-gradient(to bottom, #47db30, #47db30);
   text-decoration: none;
+}
+
+.label2 {
+  padding-left: 8px;
 }

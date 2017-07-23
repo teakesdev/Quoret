@@ -5,7 +5,6 @@ import QuestionIndex from './question_index';
 
 
 const mapStateToProps = state => {
-  console.log(state);
   return {questions: selectAllQuestions(state),
   errors: state.errors };
 };

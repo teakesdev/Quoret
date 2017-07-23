@@ -5,8 +5,12 @@ import QuestionFormContainer from './question_form_container';
 class QuestionForm extends React.Component {
   constructor(props) {
     super(props);
-  }
 
+  this.state = {
+      title: ""
+    };
+  this.handleSubmit = this.handleSubmit.bind(this);
+  }
   update(property) {
     return event => this.setState({[property]: event.target.value});
   }
@@ -15,8 +19,7 @@ class QuestionForm extends React.Component {
     e.preventDefault();
     this.props.newQuestion(this.state);
     this.setState({
-      title: "",
-      // tags: []
+      title: ""
     });
   }
 
@@ -30,12 +33,11 @@ class QuestionForm extends React.Component {
              <input
                className="input"
                ref="title"
-               value={this.state.title}
                placeholder="Title"
                onChange={this.update('title')}
                required/>
            </label>
-           <button className="new-button">New Post</button>
+           <button className="new-button">Submit Question</button>
          </form>
 );
   }
