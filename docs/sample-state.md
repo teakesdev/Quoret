@@ -26,7 +26,7 @@
       1: {
           id: 1,
           title: 'question title',
-          body: 'question body',
+          // body: 'question body',
           authorId: 1,
           tagIds = [tag1Id, tag2Id]
         } ,

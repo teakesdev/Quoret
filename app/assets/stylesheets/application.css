@@ -14,6 +14,10 @@
  *= require_self
  */
 
+ .render-errors {
+   color: #E88E0C;
+ }
+
  .header-group {
   background-color: brown;
  }
@@ -24,6 +28,7 @@
  }
 
  .link-switch:hover {
+   /*color: #67CAFE;*/
    color: #67CAFE;
    cursor: pointer;
  }

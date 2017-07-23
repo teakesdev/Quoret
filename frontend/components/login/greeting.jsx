@@ -18,7 +18,7 @@ const personalGreeting = (currentUser, logout) => (
   	<hgroup className="header-group">
       <h2 className="header-name">Hi, {currentUser.username}!</h2>
       <button className="btn" onClick={logout}>Log Out</button>
-      <input className="login-input" type="test" value="Search"/>
+      <input className="login-input" type="test"/>
       <button  onClick={logout}>Search</button>
   	</hgroup>
   </form>

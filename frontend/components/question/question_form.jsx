@@ -7,12 +7,36 @@ class QuestionForm extends React.Component {
     super(props);
   }
 
+  update(property) {
+    return event => this.setState({[property]: event.target.value});
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.newQuestion(this.state);
+    this.setState({
+      title: "",
+      // tags: []
+    });
+  }
 
 
  render() {
 
    return(
-  <li></li>
+     <form className="form-question" onSubmit={this.handleSubmit}>
+           <h1 className="new-question">New Question</h1>
+           <label>Title:
+             <input
+               className="input"
+               ref="title"
+               value={this.state.title}
+               placeholder="Title"
+               onChange={this.update('title')}
+               required/>
+           </label>
+           <button className="new-button">New Post</button>
+         </form>
 );
   }
 }

@@ -7,6 +7,7 @@ class Api::QuestionsController < ApplicationController
   def create
     @question = Question.new(question_params)
     @question.author_id = current_user.id
+
     if @question.save
       redirect_to "/api/questions"
     else
