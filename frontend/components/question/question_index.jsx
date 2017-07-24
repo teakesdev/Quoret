@@ -21,7 +21,7 @@ class QuestionIndex extends React.Component {
           <section className="question-section">
             <Route className="create-questions" exact path='/' component={QuestionFormContainer} />
             <ul className="question-list">
-              { questions.map(question =>
+              { questions.reverse().map(question =>
                  <QuestionIndexItem key={question.id} questions={question} destroyQuestion={destroyQuestion} />) }
             </ul>
 

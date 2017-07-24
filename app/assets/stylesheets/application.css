@@ -145,8 +145,23 @@
   padding-left: 8px;
 }
 
-.question-list {
+.question-section {
+  /*display: flex;
+  justify-content: flex-end;*/
+}
 
+.question-index-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Artifika', serif;
+
+}
+
+.knob {
+  /*position: fixed;
+  display: flex;
+  justify-content: flex-start;*/
 }
 
 .question-index-item:hover {
@@ -155,6 +170,7 @@
 
 .button {
   margin: 1em;
+
 }
 
 .button:hover {
