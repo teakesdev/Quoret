@@ -14,7 +14,7 @@ class QuestionIndexItem extends React.Component {
    return(
   <li className="question-index-item">
         <Link to={`/questions/${questions.id}`}>
-          <div> { questions.title } </div>
+          <div> { questions.title } Author: </div>
         </Link>
         <div className="knob">
           <button className="button">

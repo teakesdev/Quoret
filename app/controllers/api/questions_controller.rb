@@ -30,9 +30,10 @@ class Api::QuestionsController < ApplicationController
   end
 
   def update
-    @question = current_user.questions.find(params[:id])
-    if @question.update_attributes(link_params)
-      redirect_to
+    # @question = current_user.questions.find(params[:id])
+    @question = Question.find(params[:id])
+    if @question.update_attributes(question_params)
+      render "/api/questions"
     else
       render json: @question.errors.full_messages, status: 422
     end

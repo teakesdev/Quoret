@@ -43,12 +43,14 @@
 }
 
   .login-input2 {
-     height:20px;
+     height: 25px;
+     width: 300px;
      font-size:14pt;
      padding: 4px;
      border: 10px;
+     border-color: black;
      margin: 5px;
-     outline-width: 0;
+     outline-width: 10px;
 
   }
 
@@ -141,4 +143,28 @@
 
 .label2 {
   padding-left: 8px;
+}
+
+.question-list {
+
+}
+
+.question-index-item:hover {
+  background: #67CAFE;
+}
+
+.button {
+  margin: 1em;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.new-button {
+
+}
+
+.new-button {
+  cursor: pointer;
 }

@@ -31,7 +31,7 @@ class QuestionForm extends React.Component {
            <h1 className="new-question">New Question</h1>
            <label>Title:
              <input
-               className="input"
+               className="login-input2"
                ref="title"
                placeholder="Title"
                onChange={this.update('title')}
