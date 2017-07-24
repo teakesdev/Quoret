@@ -148,6 +148,7 @@
 .question-section {
   /*display: flex;
   justify-content: flex-end;*/
+  margin: 1em;
 }
 
 .question-index-item {
@@ -155,7 +156,6 @@
   display: flex;
   justify-content: space-between;
   font-family: 'Artifika', serif;
-
 }
 
 .knob {
