@@ -29,6 +29,7 @@
   outline-color: brown;
   outline-style: groove;
   align-self: center;
+  margin: 1em;
  }
 
  /*h2.header-name {
