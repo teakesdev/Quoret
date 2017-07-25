@@ -1,6 +1,6 @@
 ## Quoret
 
-[Link to heroku](https://www.heroku.com/)
+[Link to heroku](https://quoret.herokuapp.com)
 
 [Link to trello](https://trello.com/b/q4SCR3a7/quoret)
 
@@ -24,10 +24,10 @@ manner, satisfy the following criteria:
 ## Design Docs
 
 [View Wireframes](./wireframes)
-[React Components](./component-hierarchy)
-[Api Endpoints](./api-endpoints)
-[Database Scheme](./schema)
-[Sample State](./sample-state)
+[React Components](./component-hierarchy.md)
+[Api Endpoints](./api-endpoints.md)
+[Database Scheme](./schema.md)
+[Sample State](./sample-state.md)
 
 ## Implementation Timeline
 
