@@ -7,23 +7,35 @@ class QuestionIndexItem extends React.Component {
     super(props);
   }
 
+  // handleDelete(question) {
+  //   this.props.destroyQuestion(question);
+  //   this.forceUpdate();
+  // }
+  //
+  // update(property) {
+  //   return event => this.setState({[property]: null});
+  // }
 
 
  render() {
-   let {questions, destroyQuestion } = this.props;
+
+   let {question, destroyQuestion } = this.props;
    return(
   <li className="question-index-item">
-        <Link to={`/questions/${questions.id}`}>
-          <div> { questions.title } </div>
-        </Link>
-        <div className="knob">
-          <button className="button">
-            <Link to={`questions/edit/${questions.id}`}>Edit</Link>
-          </button>
-          <button className="button" onClick={ () => destroyQuestion(questions.id) }>Delete</button>
-        </div>
-        <Route path={`/questions/${questions.id}`} component={QuestionDetailContainer}/>
 
+      <div className="upper">
+        <Link to={`api/questions/${question.id}`}>
+          <div> { question.title } </div>
+        </Link>
+        <div className="author-tag"> by: {question.author_name} </div>
+        </div>
+        <div className="knob">
+          <button className="button1">
+            <Link to={`questions/edit/${question.id}`}>Edit</Link>
+          </button>
+          <button className="button2" onClick={ () => destroyQuestion(question.id) }>Delete</button>
+        </div>
+        <Route path={`api/questions/${question.id}`} component={QuestionDetailContainer}/>
   </li>
 );
   }

@@ -168,13 +168,74 @@
   background: #67CAFE;
 }
 
-.button {
-  margin: 1em;
-
+.button1 {
+  /*margin: 1em;*/
+  background: #53B245;
+  background-image: -webkit-linear-gradient(top, #53B245, #53B245);
+  background-image: -moz-linear-gradient(top, #53B245, #53B245);
+  background-image: -ms-linear-gradient(top, #53B245, #53B245);
+  background-image: -o-linear-gradient(top, #53B245, #53B245);
+  background-image: linear-gradient(to bottom, #53B245, #53B245);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
-.button:hover {
+.button1:hover {
   cursor: pointer;
+  background: #47db30;
+  background-image: -webkit-linear-gradient(top, #47db30, #47db30);
+  background-image: -moz-linear-gradient(top, #47db30, #47db30);
+  background-image: -ms-linear-gradient(top, #47db30, #47db30);
+  background-image: -o-linear-gradient(top, #47db30, #47db30);
+  background-image: linear-gradient(to bottom, #47db30, #47db30);
+  text-decoration: none;
+}
+
+.button2 {
+  /*margin: 1em;*/
+  background: brown;
+  background-image: -webkit-linear-gradient(top, brown, brown);
+  background-image: -moz-linear-gradient(top, brown, brown);
+  background-image: -ms-linear-gradient(top, brown, brown);
+  background-image: -o-linear-gradient(top, brown, brown);
+  background-image: linear-gradient(to bottom, brown, brown);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.button2:hover {
+  cursor: pointer;
+  background: #D92200;
+  background-image: -webkit-linear-gradient(top, #D92200, #D92200);
+  background-image: -moz-linear-gradient(top, #D92200, #D92200);
+  background-image: -ms-linear-gradient(top, #D92200, #D92200);
+  background-image: -o-linear-gradient(top, #D92200, #D92200);
+  background-image: linear-gradient(to bottom, #D92200, #D92200);
+  text-decoration: none;
 }
 
 .new-button {
@@ -184,3 +245,15 @@
 .new-button {
   cursor: pointer;
 }
+
+/*.author-tag {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}*/
+
+/*.upper {
+  position: relative;
+  display: flex;
+  align-items:flex-start;
+}*/

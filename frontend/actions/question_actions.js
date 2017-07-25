@@ -39,7 +39,7 @@ export const requestAQuestion = id => dispatch => {
 export const changeAQuestion = (question) => dispatch => {
   return APIUtil.updateQuestion(question)
     .then(newquestion => {
-      dispatch(receiveAQuestion(question));
+      dispatch(receiveAQuestion(newquestion));
       return newquestion;
     });
 };
@@ -47,15 +47,14 @@ export const changeAQuestion = (question) => dispatch => {
 export const newQuestion = (question) => dispatch => {
   return APIUtil.createQuestion(question)
   .then(newquestion => {
-    dispatch(receiveAQuestion(question));
-    return newquestion;
+    dispatch(receiveAQuestion(newquestion));
   });
 };
 
 export const destroyQuestion = (question) => dispatch => {
   return APIUtil.deleteQuestion(question)
     .then(deleted => {
-      dispatch(deleteQuestion(question));
+      dispatch(deleteQuestion(deleted));
     });
 
 };

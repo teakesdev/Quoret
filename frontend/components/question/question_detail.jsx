@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 class QuestionDetail extends React.Component {
 
   componentDidMount() {
+    console.log(this.props);
       this.props.requestAQuestion(this.props.match.params.questionId);
     }
 
@@ -16,8 +17,7 @@ class QuestionDetail extends React.Component {
     render() {
 
       const { question } = this.props;
-      console.log(this.props);
-          console.log(question);
+      console.log(this.props)
       if (!question) {
         return null;
       }
@@ -25,15 +25,12 @@ class QuestionDetail extends React.Component {
       return (
           <section className="section-detail">
             <div className="content-detail">
-              <h1>{question.title}</h1>
+              <h1>Title: {question.title}</h1>
+              <h2>Author: {question.author_name}</h2>
             </div>
-
           </section>
       );
     }
-
-
-
 }
 
 export default QuestionDetail;

@@ -1,7 +1,8 @@
 class Api::QuestionsController < ApplicationController
 
+
   def index
-    @questions = Question.all
+    @questions = Question.includes(:user).all
   end
 
   def create
@@ -9,21 +10,22 @@ class Api::QuestionsController < ApplicationController
     @question.author_id = current_user.id
 
     if @question.save
-      redirect_to "/api/questions"
+      # render "api/questions/show"
+      render :show
     else
       render json: @question.errors.full_messages, status: 422
     end
   end
 
   def show
-    @question = Question.find(params[:id])
+    @question = Question.includes(:user).find(params[:id])
   end
 
   def destroy
-    @question = Question.find(params[:id])
+    @question = Question.includes(:user).find(params[:id])
     # redirect_to "/questions"
     if @question.destroy
-      redirect_to "/api/questions"
+      render "api/questions/show"
     else
       render json: @question.errors.full_messages, status: 422
     end
@@ -33,7 +35,7 @@ class Api::QuestionsController < ApplicationController
     # @question = current_user.questions.find(params[:id])
     @question = Question.find(params[:id])
     if @question.update_attributes(question_params)
-      render "/api/questions"
+      render :show
     else
       render json: @question.errors.full_messages, status: 422
     end

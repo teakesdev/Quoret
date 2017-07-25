@@ -5,7 +5,7 @@ import SessionFormContainer from './login/session_form_container';
 import QuestionIndexContainer from './question/question_index_container';
 import { AuthRoute, ProtectedRoute } from '../actions/route_actions';
 import EditContainer from './question/edit_container';
-
+import QuestionDetailContainer from './question/question_detail_container';
 
 
 const App = () => (
@@ -18,6 +18,7 @@ const App = () => (
 
 
       <Switch>
+        <ProtectedRoute exact path={`/api/questions/:questionId`} component={QuestionDetailContainer}/>
         <ProtectedRoute exact path="/" component={QuestionIndexContainer} />
         <AuthRoute path="/login" component={SessionFormContainer} />
         <AuthRoute path="/signup" component={SessionFormContainer} />
