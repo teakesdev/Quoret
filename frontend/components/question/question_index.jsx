@@ -3,6 +3,7 @@ import { Link, Route } from 'react-router-dom';
 import QuestionIndexContainer from './question_index_container';
 import QuestionIndexItem from './question_index_item';
 import QuestionFormContainer from './question_form_container';
+import { withRouter } from 'react-router';
 
 class QuestionIndex extends React.Component {
   constructor(props) {
@@ -12,6 +13,12 @@ class QuestionIndex extends React.Component {
   componentDidMount() {
       this.props.requestAllQuestions();
     }
+
+  componentWillReceiveProps(newProps) {
+    if (!newProps.currentUser) {
+      this.props.history.replace("/login");
+    }
+  }
 
 
     render() {
@@ -34,4 +41,4 @@ class QuestionIndex extends React.Component {
 
 
 
-export default QuestionIndex;
+export default withRouter(QuestionIndex);

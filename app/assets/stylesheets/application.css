@@ -27,6 +27,7 @@
  h2.header-name {
    font-size: 25px;
    background: brown;
+   align-self: center;
  }
  .render-errors {
    color: #E88E0C;
@@ -87,7 +88,7 @@
      padding: 4px;
      border: 10px;
      border-color: black;
-     margin: 5px;
+     margin: 20px;
      outline-width: 10px;
 
   }
@@ -206,7 +207,9 @@
 }
 
 .question-index-item:hover {
-  background: #67CAFE;
+  background: #98A1A2;
+  /*border-style: double;
+  border-color: black;*/
 }
 
 .button1 {
@@ -280,11 +283,37 @@
 }
 
 .new-button {
-
+  background: #53B245;
+  background-image: -webkit-linear-gradient(top, #53B245, #53B245);
+  background-image: -moz-linear-gradient(top, #53B245, #53B245);
+  background-image: -ms-linear-gradient(top, #53B245, #53B245);
+  background-image: -o-linear-gradient(top, #53B245, #53B245);
+  background-image: linear-gradient(to bottom, #53B245, #53B245);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
-.new-button {
+.new-button:hover {
   cursor: pointer;
+  background: #47db30;
+  background-image: -webkit-linear-gradient(top, #47db30, #47db30);
+  background-image: -moz-linear-gradient(top, #47db30, #47db30);
+  background-image: -ms-linear-gradient(top, #47db30, #47db30);
+  background-image: -o-linear-gradient(top, #47db30, #47db30);
+  background-image: linear-gradient(to bottom, #47db30, #47db30);
+  text-decoration: none;
 }
 
 /*.author-tag {
