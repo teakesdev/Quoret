@@ -1,11 +1,11 @@
 class Api::CommentsController < ApplicationController
 
   def index
-    @comments = Question.includes(:user).all
+    @comments = Comment.includes(:user).all
   end
 
   def create
-    @comment = Question.new(question_params)
+    @comment = Comment.new(question_params)
     @comment.author_id = current_user.id
 
     if @comment.save
@@ -17,11 +17,11 @@ class Api::CommentsController < ApplicationController
   end
 
   def show
-    @comment = Question.includes(:user).find(params[:id])
+    @comment = Comment.includes(:user).find(params[:id])
   end
 
   def destroy
-    @comment = Question.includes(:user).find(params[:id])
+    @comment = Comment.includes(:user).find(params[:id])
     # redirect_to "/comments"
     if @comment.destroy
       render "api/comments/show"
@@ -32,7 +32,7 @@ class Api::CommentsController < ApplicationController
 
   def update
     # @comment = current_user.comments.find(params[:id])
-    @comment = Question.find(params[:id])
+    @comment = Comment.find(params[:id])
     if @comment.update_attributes(question_params)
       render :show
     else
