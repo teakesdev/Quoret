@@ -22,7 +22,7 @@ class Api::SessionsController < ApplicationController
 
       if @user
         logout
-        render "/api/users/show"
+        render "api/users/show"
       else
         render(
           json: ["Please Sign In!"],

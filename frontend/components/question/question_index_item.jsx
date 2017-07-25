@@ -27,7 +27,6 @@ class QuestionIndexItem extends React.Component {
 
 
   editPermission(question, currentUser, destroyQuestion) {
-    console.log(currentUser, question.author_name);
 
     if (currentUser === question.author_name) {
 
