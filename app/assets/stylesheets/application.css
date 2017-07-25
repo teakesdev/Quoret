@@ -21,14 +21,36 @@
  }
 
  .title-index {
-   font-size: 50px;
+  background: lightgray;
+  size: 20px;
+  font-size: 70px;
+  color: brown;
+  outline: 10px;
+  outline-color: brown;
+  outline-style: groove;
+  align-self: center;
  }
 
- h2.header-name {
+ /*h2.header-name {
    font-size: 25px;
    background: brown;
    align-self: center;
+ }*/
+
+ h2.header-name {
+  color: brown;
+  font-size: 30px;
+  background: lightgray;
+  align-self: center;
+  outline: 10px;
+  outline-color: brown;
+  outline-style: groove;
+  margin: .5em;
  }
+
+ /*h1.new-question {
+   color: brown;
+ }*/
  .render-errors {
    color: #E88E0C;
  }
@@ -40,12 +62,15 @@
  }
 
  .header-group {
-  background-color: brown;
+  /*background-color: brown;*/
+  height: 8em;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   padding: 10px;
   font-family: 'Artifika', serif;
+  background-image: url(https://www.globalevidencesummit.org/sites/globalevidencesummit.org/files/uploads/Questions%20banner.jpg)
+
  }
 
  a {
@@ -90,6 +115,9 @@
      border-color: black;
      margin: 20px;
      outline-width: 10px;
+     outline: 10px;
+     outline-color: brown;
+     outline-style: groove;
 
   }
 
@@ -191,13 +219,21 @@
 }
 
 .question-index-item {
-  position: relative;
+  /*position: relative;
   display: flex;
   justify-content: space-between;
   font-family: 'Artifika', serif;
   height: 4em;
-  padding-left: 1em;
-
+  margin: 1em;*/
+  position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Artifika', serif;
+    height: 4em;
+    margin: 1em;
+    outline: 1px;
+    outline-color: #98a1a2;
+    outline-style: solid;
 }
 
 .knob {
@@ -314,6 +350,13 @@
   background-image: -o-linear-gradient(top, #47db30, #47db30);
   background-image: linear-gradient(to bottom, #47db30, #47db30);
   text-decoration: none;
+}
+
+.form-question {
+  /*outline: 15px;
+  outline-color: brown;
+  outline-style: groove;*/
+  margin: 2em;
 }
 
 /*.author-tag {
