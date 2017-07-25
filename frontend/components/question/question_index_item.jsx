@@ -27,7 +27,7 @@ class QuestionIndexItem extends React.Component {
 
 
   editPermission(question, currentUser, destroyQuestion) {
-
+    console.log(question);
     if (currentUser === question.author_name) {
 
       return (<div className="knob"><button className="button1">
