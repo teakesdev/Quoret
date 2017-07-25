@@ -13,7 +13,7 @@ manner, satisfy the following criteria:
 
 1. Ability to create accounts, authorization, and guest/demo login
 2. A production README
-3. Hosting on Heroku Infinite scrolling
+3. Hosting on Heroku
 4. Question posting
 5. Question answering
 6. Ability to search questions

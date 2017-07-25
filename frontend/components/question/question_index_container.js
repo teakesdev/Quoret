@@ -5,8 +5,10 @@ import QuestionIndex from './question_index';
 
 
 const mapStateToProps = state => {
+  console.log(state.session.currentUser.username);
   return {questions: selectAllQuestions(state),
-  errors: state.errors
+  errors: state.errors,
+  currentUser: state.session.currentUser.username
   };
 };
 

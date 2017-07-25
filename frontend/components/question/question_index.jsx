@@ -15,15 +15,14 @@ class QuestionIndex extends React.Component {
 
 
     render() {
-      const { questions, newQuestion, destroyQuestion, errors } = this.props;
-
+      const { questions, newQuestion, destroyQuestion, errors, currentUser } = this.props;
       return (
         <div>
           <section className="question-section">
             <Route className="create-questions" exact path='/' component={QuestionFormContainer} />
             <ul className="question-list">
               { questions.reverse().map(question =>
-                 <QuestionIndexItem key={question.id} question={question} destroyQuestion={destroyQuestion} />) }
+                 <QuestionIndexItem key={question.id} question={question} currentUser={currentUser} destroyQuestion={destroyQuestion} />) }
             </ul>
 
 

@@ -2,6 +2,11 @@ class User < ApplicationRecord
 
   has_many :questions
 
+  has_many :comments,
+  foreign_key: :comment_id,
+  primary_key: :id,
+  classname: :Comment
+
   attr_reader :password
 
   validates :username, :password_digest, :session_token, presence: true

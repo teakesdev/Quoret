@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 class QuestionDetail extends React.Component {
 
   componentDidMount() {
-    console.log(this.props);
       this.props.requestAQuestion(this.props.match.params.questionId);
     }
 
@@ -17,7 +16,6 @@ class QuestionDetail extends React.Component {
     render() {
 
       const { question } = this.props;
-      console.log(this.props)
       if (!question) {
         return null;
       }

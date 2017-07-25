@@ -9,7 +9,7 @@ import QuestionDetailContainer from './question/question_detail_container';
 
 
 const App = () => (
-  <div>
+  <div className="main-back">
 
     <header>
 

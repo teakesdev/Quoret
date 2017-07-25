@@ -14,13 +14,51 @@
  *= require_self
  */
 
+ .main-back {
+   background: lightgray;
+   border: 2em;
+   border-color: brown;
+ }
+
+ .title-index {
+   font-size: 50px;
+ }
+
+ h2.header-name {
+   font-size: 25px;
+   background: brown;
+ }
  .render-errors {
    color: #E88E0C;
  }
 
+ .divider {
+   display: flex;
+   justify-content: space-between;
+   align-items: stretch;
+ }
+
  .header-group {
   background-color: brown;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 10px;
+  font-family: 'Artifika', serif;
  }
+
+ a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: brown;
+    text-decoration: line-through;
+  }
 
  .link-switch {
    color: blue;
@@ -44,7 +82,7 @@
 
   .login-input2 {
      height: 25px;
-     width: 300px;
+     width: 800px;
      font-size:14pt;
      padding: 4px;
      border: 10px;
@@ -67,7 +105,7 @@
     /*align-self: right;*/
     color: #53B245;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     background-color: brown;
     /*width: 200px;*/
     /*padding-left: 300px;*/
@@ -156,6 +194,9 @@
   display: flex;
   justify-content: space-between;
   font-family: 'Artifika', serif;
+  height: 4em;
+  padding-left: 1em;
+
 }
 
 .knob {

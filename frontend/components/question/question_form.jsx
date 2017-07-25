@@ -28,12 +28,12 @@ class QuestionForm extends React.Component {
 
    return(
      <form className="form-question" onSubmit={this.handleSubmit}>
-           <h1 className="new-question">New Question</h1>
-           <label>Title:
+           <h1 className="new-question">Submit A New Rhetorical Question</h1>
+           <label>
              <input
                className="login-input2"
                ref="title"
-               placeholder="Title"
+               placeholder="Ask Rhetorical Questions Here"
                onChange={this.update('title')}
                required/>
            </label>
