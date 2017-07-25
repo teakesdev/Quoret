@@ -2,12 +2,12 @@ class Comment < ApplicationRecord
   validates :body, presence: true
 
   belongs_to :question,
-  foriegn_key: :question_id,
+  foreign_key: :question_id,
   primary_key: :id,
-  classname: :Question
+  class_name: :Question
 
   belongs_to :user,
   foreign_key: :author_id,
   primary_key: :id,
-  classname: :User
+  class_name: :User
 end
