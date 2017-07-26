@@ -48,7 +48,7 @@
   outline-color: brown;
   outline-style: groove;
   margin: .5em;
-  padding: .1em;
+  padding: .2em;
  }
 
  /*h1.new-question {
@@ -440,15 +440,22 @@ align-self: center;
 
 }
 
+.knob {
+  min-width: 225px;
+}
+
 .new-button:hover {
   cursor: pointer;
-  background: #47db30;
+  /*background: #47db30;
   background-image: -webkit-linear-gradient(top, #47db30, #47db30);
   background-image: -moz-linear-gradient(top, #47db30, #47db30);
   background-image: -ms-linear-gradient(top, #47db30, #47db30);
   background-image: -o-linear-gradient(top, #47db30, #47db30);
   background-image: linear-gradient(to bottom, #47db30, #47db30);
-  text-decoration: none;
+  text-decoration: none;*/
+  background:    brown;
+background:    -webkit-linear-gradient(brown, red 50%, brown);
+background:    linear-gradient(brown, red 50%, brown);
 }
 
 .form-question {

@@ -1,8 +1,14 @@
 class User < ApplicationRecord
 
-  has_many :questions
+  has_many :questions,
+  foreign_key: :author_id,
+  primary_key: :id,
+  class_name: :Question
 
-  has_many :comments
+  has_many :comments,
+  foreign_key: :author_id,
+  primary_key: :id,
+  class_name: :Comment
 
   attr_reader :password
 

@@ -5,12 +5,12 @@ class Api::CommentsController < ApplicationController
   end
 
   def create
-    @comment = Comment.new(question_params)
-    @comment.author_id = current_user.id
+    @comment = Comment.new(comment_params)
+    # @comment.author_id = current_user.id
 
     if @comment.save
       # render "api/comments/show"
-      render :show
+      render "api/comments/show"
     else
       render json: @comment.errors.full_messages, status: 422
     end
@@ -33,7 +33,7 @@ class Api::CommentsController < ApplicationController
   def update
     # @comment = current_user.comments.find(params[:id])
     @comment = Comment.find(params[:id])
-    if @comment.update_attributes(question_params)
+    if @comment.update_attributes(comment_params)
       render :show
     else
       render json: @comment.errors.full_messages, status: 422
@@ -43,8 +43,8 @@ class Api::CommentsController < ApplicationController
 
   private
 
-  def question_params
-    params.require(:comment).permit(:body)
+  def comment_params
+    params.require(:comment).permit(:body, :author_id, :question_id)
   end
 
 end

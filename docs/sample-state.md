@@ -29,7 +29,7 @@
           // body: 'question body',
           authorId: 1,
           tagIds = [tag1Id, tag2Id]
-        } ,
+        },
       },
     currentQuestion: 1,
     },

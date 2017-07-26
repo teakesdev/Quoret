@@ -16,3 +16,4 @@ Question.create({ title: "When the French swear do they say pardon my English?",
 Question.create({ title: "If Fed Ex and UPS were to merge, would they call the resulting company Fed UP?", author_id: 1})
 Question.create({ title: "If people from Poland are called Poles, why aren't people from Holland called Holes?", author_id: 1})
 Question.create({ title: "Where did Webster look up the definitions when he wrote the dictionary?", author_id: 1})
+Comment.create({ body: "comment", author_id: 2, question_id: 92})
