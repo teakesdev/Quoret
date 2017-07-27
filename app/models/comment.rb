@@ -11,8 +11,13 @@ class Comment < ApplicationRecord
   primary_key: :id,
   class_name: :User
 
+  has_many :replies,
+  foreign_key: :comment_id,
+  primary_key: :id,
+  class_name: :Reply
+
   def author_name
     self.user.username
   end
-  
+
 end

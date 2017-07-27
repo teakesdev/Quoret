@@ -4,7 +4,7 @@ import SearchForm from './search_form';
 import { selectAllQuestions } from '../../reducers/selectors';
 import { fetchAllQuestions } from '../../util/question_api_util';
 
-const mapStateToProps = state =>({
+const mapStateToProps = state => ({
   questions: selectAllQuestions(state)
 });
 
@@ -12,7 +12,9 @@ const mapStateToProps = state =>({
 //   fetchAllQuestions: () => dispatch(fetchAllQuestions())
 // });
 
-export default connect(
+const SearchContainer = connect(
   mapStateToProps
   // mapDispatchToProps
 )(SearchForm);
+
+export default SearchContainer;

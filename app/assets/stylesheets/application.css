@@ -465,6 +465,24 @@ background:    linear-gradient(brown, red 50%, brown);
   margin: 2em;
 }
 
+div.search-container {
+  /*background: lightgray;*/
+}
+
+.results {
+
+  background-color: lightgray;
+  padding: 5px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  z-index: 1000;
+  top: 100%;
+}
+
+.search-container {
+  max-width: 250px;
+  z-index: 1000;
+}
 /*.author-tag {
   position: relative;
   display: flex;

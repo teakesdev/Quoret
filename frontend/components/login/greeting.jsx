@@ -1,23 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-// const sessionLink = (action, route) => {
-//
-// };
-//
-// const sessionLinks = (action) => (
-//   <nav className="login-signup">
-//     <div onClick={sessionLink(action,'/login')}>Login</div>
-//     &nbsp;or&nbsp;
-//     <div onClick={sessionLink(action, '/signup')}>Sign up!</div>
-//   </nav>
-// );
+import SearchContainer from '../search/search_container';
 
 const personalGreeting = (currentUser, logout) => (
   <form>
   	<hgroup className="header-group">
 
-
+      <SearchContainer/>
 
         <h1 className="title-index">¿Quoret?</h1>
         <div className="divider">

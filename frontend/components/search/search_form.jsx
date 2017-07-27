@@ -37,20 +37,6 @@ class SearchForm extends React.Component {
   }
   }
 
-  // formatResults(){
-  //   let results = this.hits()
-  //   if (results) {
-  //     let formatted = results.map((question, index) => {
-  //       return (
-  //         <li key={index} className="search-object"><Link  to={`/question/${question.id}`}  >{question.question}</Link></li>
-  //       );
-  //     });
-  //     return formatted;
-  //   } else {
-  //     return (false);
-  //   }
-  // }
-
   parseResults(){
     if (this.hits().length === 0) {
       return (
