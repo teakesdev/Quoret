@@ -22,8 +22,8 @@ class ReplyForm extends React.Component {
     // this.props.history.push(`/api/comments/${this.props.comment.id}`);
     this.state = {
       body: "",
-      comment_id: this.props.comment.id,
-      author_id: this.props.currentUser.id
+      comment_id: "",
+      author_id: ""
     };
   }
 
