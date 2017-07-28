@@ -26,7 +26,7 @@ class SearchForm extends React.Component {
     }
 
     if (results) {
-      let mappedResults = results.map((question, idx) => {
+      let mappedResults = results.slice(0,10).map((question, idx) => {
         return ( <li className="search-results" key={idx}>
         <Link to={`/api/questions/${question.id}`}> { question.title }</Link>
       </li>);
@@ -60,7 +60,6 @@ class SearchForm extends React.Component {
             <div className="search-bar">
               <input type="text" placeholder="Search All Questions" className="search-form"
                 onChange={this.update('searchParams')} value={this.searchParams}></input>
-              <input type="submit" value="Search" className="submit"></input>
             </div>
           </div>
           <div>

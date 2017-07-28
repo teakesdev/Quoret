@@ -55,7 +55,7 @@ class QuestionIndexItem extends React.Component {
           <div>{ this.editPermission(question, currentUser, destroyQuestion) }</div>
 
 
-        <Route path={`api/questions/${question.id}`} component={QuestionDetailContainer}/>
+        <Route path={`questions/${question.id}`} component={QuestionDetailContainer}/>
   </li>
 );
   }

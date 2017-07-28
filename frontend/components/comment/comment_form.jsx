@@ -20,7 +20,7 @@ class CommentForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.newComment(this.state);
-    console.log(this.props);
+
     this.props.history.push(`/api/questions/${this.props.question.id}`);
   }
 

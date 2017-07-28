@@ -1,7 +1,8 @@
 class Api::CommentsController < ApplicationController
 
   def index
-    @comments = Comment.includes(:user).all
+    @comments = Comment.includes(:user, :replies).all
+
   end
 
   def create
@@ -9,7 +10,7 @@ class Api::CommentsController < ApplicationController
     # @comment.author_id = current_user.id
 
     if @comment.save
-      # render "api/comments/show"
+    @comment = Comment.includes(:user, :replies).find(@comment.id)
       render "api/comments/show"
     else
       render json: @comment.errors.full_messages, status: 422
@@ -17,11 +18,11 @@ class Api::CommentsController < ApplicationController
   end
 
   def show
-    @comment = Comment.includes(:user).find(params[:id])
+    @comment = Comment.includes(:user, :replies).find(params[:id])
   end
 
   def destroy
-    @comment = Comment.includes(:user).find(params[:id])
+    @comment = Comment.includes(:user, :replies).find(params[:id])
     # redirect_to "/comments"
     if @comment.destroy
       render "api/comments/show"
@@ -31,8 +32,9 @@ class Api::CommentsController < ApplicationController
   end
 
   def update
-    # @comment = current_user.comments.find(params[:id])
-    @comment = Comment.find(params[:id])
+    # @comment = current_user.comments.find(params[:id]
+
+    @comment = Comment.includes(:replies, :user).find(params[:id])
     if @comment.update_attributes(comment_params)
       render :show
     else

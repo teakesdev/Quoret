@@ -6,8 +6,6 @@ import CommentIndex from './comment_index';
 
 const mapStateToProps = (state, OwnProps) => {
   return {comments: selectAllComments(state),
-    // question: state.questions.currentQuestion,
-    // question: state.questions[ownProps.answerId],
     question: OwnProps.props,
     errors: state.errors
 

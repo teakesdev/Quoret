@@ -1,29 +1,30 @@
 import { connect } from 'react-redux';
 import { selectAllReplies } from '../../reducers/selectors';
-import { requestAllComments, requestAComment, newComment } from '../../actions/comment_actions';
-import AnswerIndex from './comment_index';
+import { requestAllReplies, requestAReply, newReply } from '../../actions/reply_actions';
+import ReplyIndex from './reply_index';
 
 
 const mapStateToProps = (state, OwnProps) => {
-  return {replies: selectAllReplies(state),
+  return {
+    replies: selectAllReplies(OwnProps.comment),
     // question: state.questions.currentQuestion,
     // question: state.questions[ownProps.answerId],
-    comment: OwnProps.props,
+    comment: OwnProps.comment,
     errors: state.errors
 
   };
 };
 
 const mapDispatchToProps = dispatch => ({
-  requestAllComments: () => dispatch(requestAllComments()),
-  requestAComment: (id) => dispatch(requestAComment(id)),
-  newComment: (comment) => dispatch(newComment(comment)),
+  requestAllReplies: () => dispatch(requestAllReplies()),
+  requestAReply: (id) => dispatch(requestAReply(id)),
+  newReply: (reply) => dispatch(newReply(reply)),
   // destroyComment: (comment) => dispatch(destroyComment(comment))
 });
 
-const AnswerIndexContainer = connect(
+const ReplyIndexContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(AnswerIndex);
+)(ReplyIndex);
 
-export default AnswerIndexContainer;
+export default ReplyIndexContainer;

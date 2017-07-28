@@ -7,6 +7,7 @@ import { AuthRoute, ProtectedRoute } from '../actions/route_actions';
 import EditContainer from './question/edit_container';
 import QuestionDetailContainer from './question/question_detail_container';
 import CommentFormContainer from './comment/comment_form_container';
+import CommentIndexContainer from './comment/comment_index_container';
 
 const App = () => (
   <div className="main-back">
@@ -18,6 +19,7 @@ const App = () => (
 
 
       <Switch>
+        <ProtectedRoute exact path={`/api/comments/:commentId`} component={CommentIndexContainer}/>
         <ProtectedRoute exact path={`/api/questions/:questionId`} component={QuestionDetailContainer}/>
         <ProtectedRoute exact path="/" component={QuestionIndexContainer} />
         <ProtectedRoute exact path="/question/:questionId/answer/new" component={CommentFormContainer} />

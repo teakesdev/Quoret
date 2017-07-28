@@ -1,7 +1,7 @@
 import React from 'react';
-
-import { Link } from 'react-router-dom';
-
+import ReplyFormContainer from '../reply/reply_form_container';
+import { Link, Route } from 'react-router-dom';
+import ReplyIndexContainer from '../reply/reply_index_container';
 
 
 class CommentIndexItem extends React.Component {
@@ -23,9 +23,9 @@ class CommentIndexItem extends React.Component {
           {this.props.comment.body}
         </div>
         <div className="comments-container">
+            <ReplyIndexContainer comment={this.props.comment}/>
           <div className="new-comment-form">
-            <input className="comment-input" type="text" placeholder="Add a reply..."></input>
-            <button className="comment-submit">Submit</button>
+            <ReplyFormContainer props={this.props.comment}/>
           </div>
         </div>
       </li>

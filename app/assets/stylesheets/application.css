@@ -77,16 +77,15 @@
  }
 
  a {
-    color: black;
+    color: brown;
     text-decoration: none;
   }
   a:hover {
     color: black;
-    text-decoration: underline;
   }
   a:visited {
-    color: brown;
-    text-decoration: line-through;
+    /*color: black;
+    text-decoration: line-through;*/
   }
 
  .link-switch {
@@ -467,6 +466,19 @@ background:    linear-gradient(brown, red 50%, brown);
 
 div.search-container {
   /*background: lightgray;*/
+  /*display: flex;
+  align-content:center;*/
+}
+
+.search-form {
+  display: flex;
+  width: 250px;
+  align-self: center;
+  /*align-self: baseline;*/
+}
+
+div.search-bar {
+  /*align-items: center;*/
 }
 
 .results {

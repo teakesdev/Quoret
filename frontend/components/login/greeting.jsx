@@ -8,7 +8,7 @@ const personalGreeting = (currentUser, logout) => (
 
       <SearchContainer/>
 
-        <h1 className="title-index">¿Quoret?</h1>
+        <Link to={`/`} className="title-index">¿Quoret?</Link>
         <div className="divider">
           <h2 className="header-name">Welcome, {currentUser.username}!</h2>
           <button className="btn" onClick={logout}>Log Out</button>
