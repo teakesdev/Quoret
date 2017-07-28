@@ -51,6 +51,7 @@ export const newQuestion = (question) => dispatch => {
   });
 };
 
+
 export const destroyQuestion = (question) => dispatch => {
   return APIUtil.deleteQuestion(question)
     .then(deleted => {

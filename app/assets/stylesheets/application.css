@@ -39,7 +39,7 @@
    align-self: center;
  }*/
 
- h2.header-name {
+ /*h2.header-name {
   color: brown;
   font-size: 30px;
   background: lightgray;
@@ -49,7 +49,7 @@
   outline-style: groove;
   margin: .5em;
   padding: .2em;
- }
+ }*/
 
  /*h1.new-question {
    color: brown;
@@ -69,7 +69,7 @@
   height: 8em;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  /*align-items: center;*/
   padding: 10px;
   font-family: 'Artifika', serif;
   background-image: url(https://www.globalevidencesummit.org/sites/globalevidencesummit.org/files/uploads/Questions%20banner.jpg)
@@ -118,36 +118,53 @@
      margin: 20px;
      outline-width: 10px;
      outline: 10px;
-     outline-color: brown;
-     outline-style: groove;
+     /*outline-color: brown;
+     outline-style: groove;*/
 
   }
 
 
-
- .login-form-container {
+  .login-form-container {
     width: 500px;
+      display: inline-block;
+      justify-content: center;
+      text-align: center;
+      vertical-align: middle;
+      color: rgba(0, 0, 0, 1);
+      font-weight: bold;
+      font-size: 25px;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-family: 'Artifika', serif;
+      border-radius: 5px;
+      padding: 15px;
+      border: 25px;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+ .login-form-container {
+    /*width: 500px;
     display: inline-block;
-    justify-content: center;
+    justify-content: center;*/
     /*align-items: center;*/
-    text-align: center;
+    /*text-align: center;*/
     /*margin-left: 450px;*/
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     /*align-self: right;*/
-    color: #53B245;
+    /*color: #53B245;
     font-weight: bold;
     font-size: 25px;
-    background-color: brown;
+    background-color: brown;*/
     /*width: 200px;*/
     /*padding-left: 300px;*/
     /*padding-top: 100px;*/
     /*float: middle;*/
-    font-family: 'Artifika', serif;
+    /*font-family: 'Artifika', serif;*/
     /*text-align: center;*/
-    border-radius: 25px;
+    /*border-radius: 25px;
     padding: 10px;
     border: 25px;
-    text-align: center;
+    text-align: center;*/
 
  }
 
@@ -178,6 +195,30 @@
   }
 /*http://i.imgur.com/FazR5LO.png*/
   .btn {
+    background: rgba(255, 255, 255, 0.6);
+    background-image: -webkit-linear-gradient(top, #47db30, #47db30);
+    background-image: -moz-linear-gradient(top, #47db30, #47db30);
+    background-image: -ms-linear-gradient(top, #47db30, #47db30);
+    background-image: -o-linear-gradient(top, #47db30, #47db30);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), #ffffff);
+    text-decoration: none;
+    color: black;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 200px;
+    max-height: 60px;
+    align-self: center;
   /*background: #53B245;
   background-image: -webkit-linear-gradient(top, #53B245, #53B245);
   background-image: -moz-linear-gradient(top, #53B245, #53B245);
@@ -197,18 +238,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   cursor: pointer;*/
-  background:    #511414;
-background:    -webkit-linear-gradient(#a52a2a, #511414 50%, #a52a2a);
-background:    linear-gradient(#a52a2a, #511414 50%, #a52a2a);
-border-radius: 3px;
-padding:       8px 20px;
-color:         #ffffff;
-display:       inline-block;
-font:          normal 700 24px/1 "Calibri", sans-serif;
-text-align:    center;
-text-shadow:   2px 2px #000000;
-height: 2em;
-align-self: center;
+
 }
 
 .btn:hover {
@@ -226,6 +256,30 @@ cursor: pointer;
 }
 
 .btn-1 {
+    background: rgba(255, 255, 255, 0.6);
+    background-image: -webkit-linear-gradient(top, #47db30, #47db30);
+    background-image: -moz-linear-gradient(top, #47db30, #47db30);
+    background-image: -ms-linear-gradient(top, #47db30, #47db30);
+    background-image: -o-linear-gradient(top, #47db30, #47db30);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), #ffffff);
+    text-decoration: none;
+    color: black;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/*.btn-1 {
   background: #53B245;
   background-image: -webkit-linear-gradient(top, #53B245, #53B245);
   background-image: -moz-linear-gradient(top, #53B245, #53B245);
@@ -246,9 +300,9 @@ cursor: pointer;
   margin-bottom: 10px;
   cursor: pointer;
   color: #ffffff;
-}
+}*/
 
-.btn-1:hover {
+/*.btn-1:hover {
   background: #47db30;
   background-image: -webkit-linear-gradient(top, #47db30, #47db30);
   background-image: -moz-linear-gradient(top, #47db30, #47db30);
@@ -256,7 +310,7 @@ cursor: pointer;
   background-image: -o-linear-gradient(top, #47db30, #47db30);
   background-image: linear-gradient(to bottom, #47db30, #47db30);
   text-decoration: none;
-}
+}*/
 
 .label2 {
   padding-left: 8px;
@@ -299,18 +353,18 @@ cursor: pointer;
 }
 
 .button1 {
-  /*margin: 1em;*/
-  background: #53B245;
-  background-image: -webkit-linear-gradient(top, #53B245, #53B245);
-  background-image: -moz-linear-gradient(top, #53B245, #53B245);
-  background-image: -ms-linear-gradient(top, #53B245, #53B245);
-  background-image: -o-linear-gradient(top, #53B245, #53B245);
-  background-image: linear-gradient(to bottom, #53B245, #53B245);
+  background: rgba(255, 255, 255, 0.6);
+  background-image: -webkit-linear-gradient(top, #47db30, #47db30);
+  background-image: -moz-linear-gradient(top, #47db30, #47db30);
+  background-image: -ms-linear-gradient(top, #47db30, #47db30);
+  background-image: -o-linear-gradient(top, #47db30, #47db30);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), #ffffff);
+  text-decoration: none;
+  color: black;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
   font-family: Arial;
-  /*color: #ffffff;*/
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
@@ -335,7 +389,7 @@ cursor: pointer;
 
 .button2 {
   /*margin: 1em;*/
-  background: brown;
+  /*background: brown;
   background-image: -webkit-linear-gradient(top, brown, brown);
   background-image: -moz-linear-gradient(top, brown, brown);
   background-image: -ms-linear-gradient(top, brown, brown);
@@ -345,7 +399,27 @@ cursor: pointer;
   -moz-border-radius: 28;
   border-radius: 28px;
   font-family: Arial;
-  /*color: #ffffff;*/
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;*/
+  background: rgba(255, 255, 255, 0.6);
+  background-image: -webkit-linear-gradient(top, #47db30, #47db30);
+  background-image: -moz-linear-gradient(top, #47db30, #47db30);
+  background-image: -ms-linear-gradient(top, #47db30, #47db30);
+  background-image: -o-linear-gradient(top, #47db30, #47db30);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), #ffffff);
+  text-decoration: none;
+  color: black;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
@@ -355,6 +429,7 @@ cursor: pointer;
   margin-top: 10px;
   margin-bottom: 10px;
   cursor: pointer;
+
 }
   input.btn {
     /*margin: 1em;*/
@@ -424,7 +499,7 @@ cursor: pointer;
   margin-top: 10px;
   margin-bottom: 10px;
   cursor: pointer;*/
-  background:    #511414;
+  /*background:    #511414;
 background:    -webkit-linear-gradient(#a52a2a, #511414 50%, #a52a2a);
 background:    linear-gradient(#a52a2a, #511414 50%, #a52a2a);
 border-radius: 3px;
@@ -435,8 +510,47 @@ font:          normal 700 24px/1 "Calibri", sans-serif;
 text-align:    center;
 text-shadow:   2px 2px #000000;
 height: 2em;
-align-self: center;
+align-self: center;*/
 
+display: flex;
+background: rgba(255, 255, 255, 0.6);
+background-image: -webkit-linear-gradient(top, #47db30, #47db30);
+background-image: -moz-linear-gradient(top, #47db30, #47db30);
+background-image: -ms-linear-gradient(top, #47db30, #47db30);
+background-image: -o-linear-gradient(top, #47db30, #47db30);
+background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), #ffffff);
+text-decoration: none;
+color: black;
+-webkit-border-radius: 28;
+-moz-border-radius: 28;
+border-radius: 28px;
+font-family: Arial;
+font-size: 20px;
+padding: 10px 20px 10px 20px;
+text-decoration: none;
+border: 100px;
+margin-right: 10px;
+margin-left: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+cursor: pointer;
+}
+
+
+.form-reply {
+  display: flex;
+  align-items: baseline;
+  align-content: center;
+}
+
+.reply-index {
+  display: flex;
+  align-items: baseline;
+  align-content: center;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .knob {
@@ -467,34 +581,65 @@ background:    linear-gradient(brown, red 50%, brown);
 div.search-container {
   /*background: lightgray;*/
   /*display: flex;
-  align-content:center;*/
+  align-items:flex-start;*/
 }
 
 .search-form {
   display: flex;
   width: 250px;
-  align-self: center;
+  align-self: flex-start;
   /*align-self: baseline;*/
+  height:20px;
+  font-size:14pt;
+  padding: 4px;
+  border: 10px;
+  margin-left: 10px;
+  outline-width: 0;
+  margin-top: 50px;
 }
 
 div.search-bar {
-  /*align-items: center;*/
+  /*align-items:flex-start;*/
 }
 
 .results {
 
   background-color: lightgray;
-  padding: 5px;
+  padding: 10px;
   margin-top: 10px;
   border: 1px solid #ddd;
   z-index: 1000;
   top: 100%;
 }
 
+.outer {
+  background-color: none;
+}
+
 .search-container {
   max-width: 250px;
   z-index: 1000;
 }
+
+.comment-title {
+  display: flex;
+  align-items: stretch;
+}
+
+.reply-input {
+  display: flex;
+  width: 250px;
+  align-self: flex-start;
+  /*align-self: baseline;*/
+  height:20px;
+  font-size:14pt;
+  padding: 4px;
+  border: 10px;
+  margin-left: 10px;
+  outline-width: 0;
+  margin-top: 50px;
+}
+
 /*.author-tag {
   position: relative;
   display: flex;

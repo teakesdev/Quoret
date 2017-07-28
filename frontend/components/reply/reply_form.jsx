@@ -32,6 +32,7 @@ class ReplyForm extends React.Component {
                className="reply-input"
                ref="body"
                placeholder="New Reply"
+               value={this.state.body}
                onChange={this.update('body')}
                required/>
            </label>

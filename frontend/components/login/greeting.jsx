@@ -10,8 +10,8 @@ const personalGreeting = (currentUser, logout) => (
 
         <Link to={`/`} className="title-index">¿Quoret?</Link>
         <div className="divider">
-          <h2 className="header-name">Welcome, {currentUser.username}!</h2>
-          <button className="btn" onClick={logout}>Log Out</button>
+          <h2 className="header-name"></h2>
+          <button className="btn" onClick={logout}>Log Out {currentUser.username}!</button>
         </div>
   	</hgroup>
   </form>
