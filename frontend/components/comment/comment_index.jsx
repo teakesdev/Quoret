@@ -34,7 +34,7 @@ class CommentIndex extends React.Component {
 
 
       <div >
-          <h1>Comments:</h1>
+          <h1 className="comment-title">Comments:</h1>
         <div className="comment-comment">
 
         <ul>{comments}</ul>

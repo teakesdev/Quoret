@@ -26,7 +26,6 @@ class CommentIndexItem extends React.Component {
           <h2 className="reply-index">
             Replies:
           <br/>
-          <br/>
             <ReplyIndexContainer comment={this.props.comment}/>
           </h2>
           <div className="new-comment-form">

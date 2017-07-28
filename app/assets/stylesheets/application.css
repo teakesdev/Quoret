@@ -13,8 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+ .comment-title {
+   margin: .5em;
+ }
+
  .comment-item {
    width: 80vw;
+   padding: 2rem;
  }
 
  .question-title {
@@ -23,7 +29,7 @@
  }
 
  .main-back {
-   background: #f6f6f6;
+   background: lightgray;
    border: 2em;
    border-color: brown;
  }
@@ -452,42 +458,68 @@ cursor: pointer;
 
 }
 
+  .comment-input {
+    height: 25px;
+    width: 800px;
+    font-size:14pt;
+    padding: 4px;
+    border: 10px;
+    border-color: black;
+    margin: 20px;
+    outline-width: 10px;
+    outline: 10px;
+  }
+
 body {
-    background: #f6f6f6;
+    background: lightgray;
 }
 
   li.reply-item {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     font-family: 'Artifika', serif;
     height: 2em;
     margin: 1em;
     outline: 1px;
     outline-color: #98a1a2;
     outline-style: solid;
+    align-items: center;
   }
 
   .author-name {
     font-size: 20px;
     font-style: italic;
+    padding: 20px;
   }
 
   .comment-text {
-
+    font-size: 30px;
+    padding: 20px;
   }
-  /*.author-title {
-    align-self: center;
+  .author-title {
+    margin: .3em;
   }
-  .question-title {
+  /*.question-title {
     align-self: center;
   }*/
+
+  div.author-profile {
+
+  }
+
+  .comment-button {
+    font-size: 25px;
+    font-style: italic;
+  }
+
   .content-detail {
     margin: 10px;
     padding 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
   }
   input.btn {
     /*margin: 1em;*/
@@ -663,12 +695,13 @@ div.search-bar {
 
 .results {
 
-  background-color: lightgray;
-  padding: 10px;
-  margin-top: 10px;
-  border: 1px solid #ddd;
-  z-index: 1000;
-  top: 100%;
+  width: 236px;
+    background-color: lightgray;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    top: 100%;
 }
 
 .outer {
