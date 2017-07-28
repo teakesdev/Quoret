@@ -13,7 +13,7 @@ class ReplyIndexItem extends React.Component {
   render() {
     const blankReply = {
       author_name: "",
-      body: "Be the first to add a reply..."
+      body: ""
     };
     const reply = this.props.reply || blankReply;
 
