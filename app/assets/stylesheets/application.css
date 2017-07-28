@@ -13,9 +13,17 @@
  *= require_tree .
  *= require_self
  */
+ .comment-item {
+   width: 80vw;
+ }
+
+ .question-title {
+   font-size: 40px;
+   color: brown;
+ }
 
  .main-back {
-   background: lightgray;
+   background: #f6f6f6;
    border: 2em;
    border-color: brown;
  }
@@ -89,8 +97,20 @@
   }
 
  .link-switch {
-   color: blue;
+   color: brown;
    cursor: pointer;
+ }
+
+ .comment-comment {
+   position: relative;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Artifika', serif;
+    /*height: 2em;
+    margin: 1em;*/
+    outline: 1px;
+    outline-color: #98a1a2;
+    outline-style: solid;
  }
 
  .link-switch:hover {
@@ -431,6 +451,44 @@ cursor: pointer;
   cursor: pointer;
 
 }
+
+body {
+    background: #f6f6f6;
+}
+
+  li.reply-item {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Artifika', serif;
+    height: 2em;
+    margin: 1em;
+    outline: 1px;
+    outline-color: #98a1a2;
+    outline-style: solid;
+  }
+
+  .author-name {
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .comment-text {
+
+  }
+  /*.author-title {
+    align-self: center;
+  }
+  .question-title {
+    align-self: center;
+  }*/
+  .content-detail {
+    margin: 10px;
+    padding 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   input.btn {
     /*margin: 1em;*/
     background: #53B245;
@@ -544,9 +602,9 @@ cursor: pointer;
 }
 
 .reply-index {
-  display: flex;
+  /*display: flex;
   align-items: baseline;
-  align-content: center;
+  align-content: center;*/
 }
 
 ul {
@@ -576,6 +634,7 @@ background:    linear-gradient(brown, red 50%, brown);
   outline-color: brown;
   outline-style: groove;*/
   margin: 2em;
+  display: flex;
 }
 
 div.search-container {

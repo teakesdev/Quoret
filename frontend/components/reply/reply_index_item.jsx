@@ -13,7 +13,7 @@ class ReplyIndexItem extends React.Component {
   render() {
     const blankReply = {
       author_name: "",
-      body: ""
+      body: "Be the first to add a reply..."
     };
     const reply = this.props.reply || blankReply;
     console.log(reply);
@@ -21,14 +21,12 @@ class ReplyIndexItem extends React.Component {
       <li className="reply-item">
         <div className="author-profile">
           <div className="author-name">
-            by: {reply.author_name}
+            {reply.author_name}:
+            <br/>
           </div>
         </div>
         <div className="reply-text">
           {reply.body}
-        </div>
-        <div className="comments-container">
-
         </div>
       </li>
     );

@@ -3,6 +3,7 @@ import SearchForm from './search_form';
 
 import { selectAllQuestions } from '../../reducers/selectors';
 import { fetchAllQuestions } from '../../util/question_api_util';
+import { requestAllQuestions } from '../../actions/question_actions';
 
 const mapStateToProps = state => ({
   questions: selectAllQuestions(state)

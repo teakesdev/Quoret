@@ -19,7 +19,6 @@ const mapDispatchToProps = dispatch => ({
   requestAllReplies: () => dispatch(requestAllReplies()),
   requestAReply: (id) => dispatch(requestAReply(id)),
   newReply: (reply) => dispatch(newReply(reply)),
-  // destroyComment: (comment) => dispatch(destroyComment(comment))
 });
 
 const ReplyIndexContainer = connect(

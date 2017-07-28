@@ -31,12 +31,15 @@ class CommentIndex extends React.Component {
 
     ));
     return (
-      <div>
-        <ul>{comments}</ul>
-        <form>
 
-      </form>
+
+      <div >
+          <h1>Comments:</h1>
+        <div className="comment-comment">
+
+        <ul>{comments}</ul>
       </div>
+    </div>
 
     );
   }

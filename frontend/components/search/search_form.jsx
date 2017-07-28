@@ -7,6 +7,14 @@ class SearchForm extends React.Component {
     this.state = {
       searchParams: ""
     };
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault;
+    this.state = {
+      searchParams: ""
+    };
   }
 
   update(property) {
@@ -27,8 +35,10 @@ class SearchForm extends React.Component {
 
     if (results) {
       let mappedResults = results.slice(0,10).map((question, idx) => {
-        return ( <li className="search-results" key={idx}>
-        <Link to={`/api/questions/${question.id}`}> { question.title }</Link>
+        return ( <li onClick={() => {
+          this.setState({searchParams: ""});
+        }} className="search-results" key={idx}>
+        <Link to={`/api/questions/${question.id}`} onClick={this.handleSubmit}> { question.title }</Link>
       </li>);
     });
     return mappedResults;

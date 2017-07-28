@@ -25,9 +25,9 @@ class QuestionDetail extends React.Component {
 
           <section className="section-detail">
             <div className="content-detail">
-              <h1>Title: {question.title}</h1>
-              <h2>Author: {question.author_name}</h2>
-              <Link className="comment-button" to={`/question/${question.id}/answer/new`}>Comment</Link>
+              <h1 className="question-title">{question.title}</h1>
+              <h2 className="author-title">Author: {question.author_name}</h2>
+              <Link className="comment-button" to={`/question/${question.id}/answer/new`}>Add A New Comment</Link>
               <CommentIndexContainer props={question}/>
             </div>
           </section>

@@ -15,11 +15,7 @@ export const receiveAComment = comment => ({
   comment,
 });
 
-//
-// export const deleteComment = comment => ({
-//   type: DELETE_A_COMMENT,
-//   comment,
-// });
+
 
 // export const errorComment = error => ({
 //   type: ERROR_COMMENT,
@@ -50,11 +46,3 @@ export const newComment = (comment) => dispatch => {
     dispatch(receiveAComment(newcomment));
   });
 };
-
-// export const destroyComment = (comment) => dispatch => {
-//   return APIUtil.deleteComment(comment)
-//     .then(deleted => {
-//       dispatch(deleteComment(deleted));
-//     });
-
-// };

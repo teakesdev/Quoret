@@ -2,7 +2,7 @@ import React from 'react';
 import ReplyFormContainer from '../reply/reply_form_container';
 import { Link, Route } from 'react-router-dom';
 import ReplyIndexContainer from '../reply/reply_index_container';
-
+import { destroyComment } from '../../actions/comment_actions';
 
 class CommentIndexItem extends React.Component {
   constructor(props) {
