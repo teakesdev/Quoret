@@ -8,7 +8,13 @@ class SearchForm extends React.Component {
       searchParams: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.render = this.render.bind(this);
+    this.myFunction = this.myFunction.bind(this);
   }
+
+  componentDidMount() {
+      this.setState(this.props.requestAllQuestions());
+    }
 
   handleSubmit(e) {
     e.preventDefault;
@@ -25,9 +31,11 @@ class SearchForm extends React.Component {
     let results = [];
 
     const { questions } = this.props;
+    // console.log(questions);
     if (this.state.searchParams) {
       questions.forEach( question => {
-        if (question.title.toLowerCase().includes(this.state.searchParams.toLowerCase())) {
+        if (question.title.toLowerCase()
+        .includes(this.state.searchParams.toLowerCase())) {
           results.push(question);
         }
       });
@@ -38,7 +46,9 @@ class SearchForm extends React.Component {
         return ( <li onClick={() => {
           this.setState({searchParams: ""});
         }} className="search-results" key={idx}>
-        <Link to={`/api/questions/${question.id}`} onClick={this.handleSubmit}> { question.title }</Link>
+        <Link to={`/api/questions/${question.id}`}
+          onClick={this.handleSubmit}> { question.title }
+        </Link>
       </li>);
     });
     return mappedResults;
@@ -60,7 +70,10 @@ class SearchForm extends React.Component {
       );
     }
   }
-
+  myFunction(e) {
+    e.preventDefault;
+    alert('please select a link');
+  }
 
 
   render(){
@@ -68,8 +81,10 @@ class SearchForm extends React.Component {
         <div className="search-container">
           <div className="outer">
             <div className="search-bar">
+              <form>
               <input type="text" placeholder="Search All Questions" className="search-form"
-                onChange={this.update('searchParams')} value={this.searchParams}></input>
+                onChange={this.update('searchParams')} onSubmit={this.myFunction} value={this.searchParams}></input>
+            </form>
             </div>
           </div>
           <div>

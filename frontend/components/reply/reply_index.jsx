@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import ReplyIndexItem from './reply_index_item';
-import ReplyFormContainer from '../reply/reply_form_container';
+// import ReplyFormContainer from '../reply/reply_form_container';
 import { Link, Route } from 'react-router-dom';
 
 class ReplyIndex extends React.Component {

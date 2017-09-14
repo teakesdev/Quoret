@@ -8,23 +8,6 @@ class QuestionIndexItem extends React.Component {
     this.editPermission = this.editPermission.bind(this);
   }
 
-  // handleDelete(question) {
-  //   this.props.destroyQuestion(question);
-  //   this.forceUpdate();
-  // }
-  //
-  // update(property) {
-  //   return event => this.setState({[property]: null});
-  // }
-
-  // const sessionLinks = (action) => (
-  //   <nav className="login-signup">
-  //     <div onClick={sessionLink(action,'/login')}>Login</div>
-  //     &nbsp;or&nbsp;
-  //     <div onClick={sessionLink(action, '/signup')}>Sign up!</div>
-  //   </nav>
-  // );
-
 
   editPermission(question, currentUser, destroyQuestion) {
     if (currentUser === question.author_name) {
