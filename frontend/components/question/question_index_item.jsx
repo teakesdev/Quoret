@@ -29,11 +29,17 @@ class QuestionIndexItem extends React.Component {
   <li className="question-index-item">
 
       <div className="upper">
-        <Link to={`api/questions/${question.id}`}>
-          <div> { question.title } </div>
-        </Link>
-        <div className="author-tag"> by: {question.author_name} </div>
+        <div className="question-divider-internal">
+          <img class="profile_photo_img" src="https://qsf.ec.quoracdn.net/-3-images.new_grid.profile_pic_anon_small.png-26-867c1f9ac8eed1ed.png" height="40" alt="Anonymous" width="40"/>
+          <div className="author-tag"> by: {question.author_name} </div>
         </div>
+          <div className="title-link">
+            <Link to={`api/questions/${question.id}`}>
+              <div> { question.title } </div>
+            </Link>
+          </div>
+        
+      </div>
 
           <div>{ this.editPermission(question, currentUser, destroyQuestion) }</div>
 

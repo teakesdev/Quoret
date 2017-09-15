@@ -10,6 +10,7 @@ class QuestionForm extends React.Component {
       title: ""
     };
   this.handleSubmit = this.handleSubmit.bind(this);
+  this.resetForm = this.resetForm.bind(this);
   }
   update(property) {
     return event => this.setState({[property]: event.target.value});
@@ -18,8 +19,15 @@ class QuestionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.newQuestion(this.state);
+    this.resetForm();
+  }
+
+  resetForm() {
+    // e.preventDefault();
     this.setState({
       title: ""
+    }, () => {
+      console.log(this.state);
     });
   }
 
@@ -33,11 +41,11 @@ class QuestionForm extends React.Component {
              <input
                className="login-input2"
                ref="title"
+               value={this.state.title}
                placeholder="Submit A New Rhetorical Question"
                onChange={this.update('title')}
                required/>
            </div>
-           <button className="new-button">Submit Question</button>
          </form>
 );
   }
