@@ -15,7 +15,7 @@ class QuestionIndexItem extends React.Component {
       return (<div className="knob"><button className="button1">
         <Link to={`questions/edit/${question.id}`}>Edit</Link>
       </button>
-      <button className="button2" onClick={ () => destroyQuestion(question.id) }>Delete</button></div>);
+      <button className="button1" onClick={ () => destroyQuestion(question.id) }>Delete</button></div>);
     }
 
   }
@@ -27,18 +27,16 @@ class QuestionIndexItem extends React.Component {
 
    return (
   <li className="question-index-item">
-
-      <div className="upper">
+      <div className="divider-question">
         <div className="question-divider-internal">
-          <img class="profile_photo_img" src="https://qsf.ec.quoracdn.net/-3-images.new_grid.profile_pic_anon_small.png-26-867c1f9ac8eed1ed.png" height="40" alt="Anonymous" width="40"/>
+          <img className="img_item" src="https://qsf.ec.quoracdn.net/-3-images.new_grid.profile_pic_anon_small.png-26-867c1f9ac8eed1ed.png" height="40" alt="Anonymous" width="40" margin="5px"/>
           <div className="author-tag"> by: {question.author_name} </div>
         </div>
           <div className="title-link">
             <Link to={`api/questions/${question.id}`}>
-              <div> { question.title } </div>
+              <div className="title-main"> { question.title } </div>
             </Link>
           </div>
-        
       </div>
 
           <div>{ this.editPermission(question, currentUser, destroyQuestion) }</div>
