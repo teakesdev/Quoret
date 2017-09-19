@@ -36,7 +36,6 @@ class QuestionForm extends React.Component {
 
    return(
      <form className="form-question" onSubmit={this.handleSubmit}>
-           <h1 className="new-question"></h1>
            <div className="search-box">
              <input
                className="login-input2"

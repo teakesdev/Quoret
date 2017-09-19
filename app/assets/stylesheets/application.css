@@ -49,7 +49,7 @@
 
  .title-index {
   size: 10px;
-  font-size: 35px;
+  font-size: 28px;
   color: brown;
   align-self: center;
   margin-left: 1em;
@@ -70,7 +70,7 @@
  .header-group {
   height: 3em;
   display: flex;
-  justify-content:space-around;
+  justify-content: center;
   /*padding: 10px;*/
   font-family: 'Artifika', serif;
   background-color: white;
@@ -80,6 +80,7 @@
 
  .logout-photo {
    display: flex;
+   align-items: center;
    padding: 5px;
  }
 
@@ -127,7 +128,7 @@
 
   .login-input2 {
      height: 25px;
-     width: 100%;
+     width: 76%;
      /*max-width: 60em;*/
      margin: auto;
      font-size:14pt;
@@ -195,8 +196,8 @@
     text-shadow:   1px 1px #000000;
     /*border-radius: 28px;*/
     font-family: Arial;
-    font-size: 15px;
-    padding: 5px 5px 5px 5px;
+    font-size: 12px;
+    padding: 4px;
     text-decoration: none;
     border: 100px;
     margin-right: 10px;
@@ -256,14 +257,17 @@
   display: flex;
   justify-content: space-between;
   font-family: 'Artifika', serif;
-  height: 4em;
+  height: 9em;
   /*margin: 1em;
   border: 1px solid #efefef;*/
   background: white;
-  margin: 18px;
+  margin-left: 180px;
+  margin-right: 180px;
+  margin-top: 8px;
   border: 1px solid #ddd;
   box-shadow: 0 3px 2px -2px rgba(200,200,200,0.2);
   padding: 10px;
+  min-width: 300px;
 }
 
 
@@ -500,7 +504,7 @@ ul {
 
 .search-form {
   display: flex;
-  width: 90%;
+  width: 95%;
   align-self: flex-start;
   height:20px;
   font-size:14pt;
@@ -530,12 +534,15 @@ ul {
 
 .outer {
   background-color: none;
+  width: 100%;
 }
 
 .search-container {
   /*max-width: 250px;*/
   /*z-index: 1000;*/
-  width: 70%;
+  display: flex;
+  align-items: center;
+  width: 50%;
 }
 
 .comment-title {
