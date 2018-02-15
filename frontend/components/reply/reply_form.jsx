@@ -20,11 +20,7 @@ class ReplyForm extends React.Component {
     e.preventDefault();
     this.props.newReply(this.state);
     this.props.history.push(`/api/questions/${this.props.question.id}`);
-    this.state = {
-      body: "",
-      comment_id: "",
-      author_id: ""
-    };
+    
   }
 
 
@@ -41,7 +37,7 @@ class ReplyForm extends React.Component {
                onChange={this.update('body')}
                required/>
            </label>
-           <button className="new-button">Submit Reply</button>
+           <button className="comment-button">Submit Reply</button>
          </form>
 );
   }

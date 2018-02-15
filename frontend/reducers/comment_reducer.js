@@ -20,6 +20,7 @@ const commentReducer = (state = {}, action) => {
       const myComment = {[action.comment.id]: action.comment};
       return merge({}, state, myComment);
     case RECEIVE_A_REPLY:
+      console.log(state);
       const oldSt = merge({}, state);
       oldSt[action.reply.comment_id].replies[action.reply.id] = action.reply;
       return oldSt;

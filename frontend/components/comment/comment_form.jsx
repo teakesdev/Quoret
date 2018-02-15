@@ -39,7 +39,7 @@ class CommentForm extends React.Component {
                onChange={this.update('body')}
                required/>
            </label>
-           <button className="new-button">Submit Comment</button>
+           <button className="comment-button">Submit Comment</button>
          </form>
 );
   }

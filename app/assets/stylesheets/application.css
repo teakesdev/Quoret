@@ -61,6 +61,8 @@
  .comment-item {
    width: 80vw;
    padding: 2rem;
+   background: white;
+   margin: 2rem;
  }
 
  .question-title {
@@ -159,7 +161,10 @@
      box-shadow: 0 3px 2px -2px rgba(200,200,200,0.2);
   }
 
-
+  .comments-container {
+    background: #f6f6f6;
+    padding: 7px;
+  }
   .login-form-container {
     width: 500px;
       display: inline-block;
@@ -442,7 +447,7 @@ body {
   }
 
   .new-button {
-    width: 80em;
+    /* width: 80em; */
   }
   /*input.btn {
     background: #53B245;
@@ -602,6 +607,6 @@ ul {
   padding: 4px;
   border: 10px;
   margin-left: 10px;
-  outline-width: 0;
+  outline: black;
   margin-top: 50px;
 }
