@@ -46,7 +46,7 @@ class SearchForm extends React.Component {
         return ( <li onClick={() => {
           this.setState({searchParams: ""});
         }} className="search-results" key={idx}>
-        <Link to={`/api/questions/${question.id}`}
+        <Link to={`/questions/${question.id}`}
           onClick={this.handleSubmit}> { question.title }
         </Link>
       </li>);

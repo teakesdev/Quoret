@@ -19,8 +19,8 @@ const App = () => (
 
 
       <Switch>
-        <ProtectedRoute exact path={`/api/comments/:commentId`} component={CommentIndexContainer}/>
-        <ProtectedRoute exact path={`/api/questions/:questionId`} component={QuestionDetailContainer}/>
+        <ProtectedRoute exact path={`/comments/:commentId`} component={CommentIndexContainer}/>
+        <ProtectedRoute exact path={`/questions/:questionId`} component={QuestionDetailContainer}/>
         <ProtectedRoute exact path="/" component={QuestionIndexContainer} />
         <ProtectedRoute exact path="/question/:questionId/answer/new" component={CommentFormContainer} />
         <AuthRoute path="/login" component={SessionFormContainer} />

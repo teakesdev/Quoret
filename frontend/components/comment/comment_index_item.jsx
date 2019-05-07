@@ -14,7 +14,7 @@ class CommentIndexItem extends React.Component {
     return(
       <li className="comment-item">
         <div className="author-profile">
-          <img className="profile_photo_img" src="https://qsf.ec.quoracdn.net/-3-images.new_grid.profile_pic_anon_small.png-26-867c1f9ac8eed1ed.png" height="50" alt="Anonymous" width="50"></img>
+          <img className="profile_photo_img" src="https://cdn.onlinewebfonts.com/svg/img_87237.png" height="50" alt="Anonymous" width="50"></img>
           <div className="author-name">
              {this.props.comment.user.username}
           </div>

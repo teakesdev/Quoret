@@ -19,8 +19,8 @@ class ReplyForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.newReply(this.state);
-    this.props.history.push(`/api/questions/${this.props.question.id}`);
-    
+    this.props.history.push(`/questions/${this.props.question.id}`);
+
   }
 
 

@@ -29,11 +29,11 @@ class QuestionIndexItem extends React.Component {
   <li className="question-index-item">
       <div className="divider-question">
         <div className="question-divider-internal">
-          <img className="img_item" src="https://qsf.ec.quoracdn.net/-3-images.new_grid.profile_pic_anon_small.png-26-867c1f9ac8eed1ed.png" height="40" alt="Anonymous" width="40" margin="5px"/>
+          <img className="img_item" src="https://cdn.onlinewebfonts.com/svg/img_87237.png" height="40" alt="Anonymous" width="40" margin="5px"/>
           <div className="author-tag"> by: {question.author_name} </div>
         </div>
           <div className="title-link">
-            <Link to={`api/questions/${question.id}`}>
+            <Link to={`/questions/${question.id}`}>
               <div className="title-main"> { question.title } </div>
             </Link>
           </div>
